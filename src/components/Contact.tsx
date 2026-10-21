@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { site, telHref } from "@/lib/site";
 
-export default function Contact({ defaultTopic = "My home" }: { defaultTopic?: "My home" | "My business" }) {
+export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(false);
@@ -14,7 +14,7 @@ export default function Contact({ defaultTopic = "My home" }: { defaultTopic?: "
 
     // No form service configured yet: open the visitor's email app instead.
     if (!site.formspreeId) {
-      const subject = `Website inquiry: ${data.get("topic")}`;
+      const subject = `Website inquiry: ${data.get("topic")} (${data.get("for")})`;
       const body = [
         `Name: ${data.get("name")}`,
         `Email: ${data.get("email")}`,
@@ -78,14 +78,29 @@ export default function Contact({ defaultTopic = "My home" }: { defaultTopic?: "
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
               <fieldset>
-                <legend className={labelClass}>What do you need help with?</legend>
+                <legend className={labelClass}>What do you need?</legend>
                 <div className="flex flex-wrap gap-3">
-                  {["My home", "My business", "Something else"].map((t) => (
+                  {["A quick fix", "Monthly support", "A project", "Not sure yet"].map((t, i) => (
                     <label
                       key={t}
                       className="flex items-center gap-2 px-4 py-2 border-2 border-rule cursor-pointer has-[:checked]:bg-blue has-[:checked]:text-paper has-[:checked]:border-blue"
                     >
-                      <input type="radio" name="topic" value={t} defaultChecked={t === defaultTopic} className="accent-blue-dark" />
+                      <input type="radio" name="topic" value={t} defaultChecked={i === 0} className="accent-blue-dark" />
+                      {t}
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend className={labelClass}>Is this for your home or a business?</legend>
+                <div className="flex flex-wrap gap-3">
+                  {["Home", "Business"].map((t, i) => (
+                    <label
+                      key={t}
+                      className="flex items-center gap-2 px-4 py-2 border-2 border-rule cursor-pointer has-[:checked]:bg-blue has-[:checked]:text-paper has-[:checked]:border-blue"
+                    >
+                      <input type="radio" name="for" value={t} defaultChecked={i === 0} className="accent-blue-dark" />
                       {t}
                     </label>
                   ))}

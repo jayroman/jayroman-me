@@ -10,12 +10,12 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: "Jay Roman | Home Tech Help & Small Business Systems | Cashiers, Sapphire, Highlands NC",
+  title: "Jay Roman | Local Tech Support for Homes & Businesses | Cashiers, Sapphire, Highlands NC",
   description:
-    "Year-round, local tech help for Plateau homes: Wi-Fi, TVs, speakers, smart devices, and away-home alerts. Plus practical systems that save local businesses time and money.",
+    "Local tech support for homes and businesses: networks, computers, smart devices, and software. Quick fixes, monthly support plans, and projects. Serving Cashiers, Sapphire, Highlands, and surrounding areas.",
   openGraph: {
-    title: "Jay Roman | Tech Help on the Plateau",
-    description: "Home tech help and small business systems for Cashiers, Sapphire, Highlands, and surrounding areas in Western NC.",
+    title: "Jay Roman | Local Tech Support on the Plateau",
+    description: "Tech support for homes and businesses in Cashiers, Sapphire, Highlands, and surrounding areas in Western NC.",
     url: "https://jayroman.me",
     siteName: "Jay Roman",
     type: "website",

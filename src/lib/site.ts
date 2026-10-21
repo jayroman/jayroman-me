@@ -9,12 +9,6 @@ export const site = {
   area: ["Cashiers", "Sapphire", "Highlands", "Glenville", "Lake Toxaway"],
 };
 
-// Where each page lives. Option 1: home tech at "/". Option 2: home tech at "/home".
-export const paths = {
-  home: "/",
-  business: "/business",
-};
-
 // Hourly rates for on-site and remote fixes (same for homes and businesses)
 export const rates = [
   { price: "$125", label: "First hour on-site" },

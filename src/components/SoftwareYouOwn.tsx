@@ -23,13 +23,13 @@ const rows = [
 
 export default function SoftwareYouOwn() {
   return (
-    <section className="bg-mist py-12 sm:py-16">
+    <section id="projects" className="bg-paper py-12 sm:py-16 border-t-2 border-mist scroll-mt-4">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="display text-3xl sm:text-4xl max-w-4xl">
           Paying for software you only use part of?
         </h2>
         <p className="text-ink/85 text-lg leading-relaxed mt-6 max-w-2xl">
-          A lot of local businesses pay a monthly subscription for a platform built for everyone,
+          One project I&apos;m often asked about: a lot of local businesses pay a monthly subscription for a platform built for everyone,
           and use a fraction of it. Often a custom tool built around exactly what you do costs less
           over a few years, does the job better, and belongs to you.
         </p>
@@ -59,12 +59,6 @@ export default function SoftwareYouOwn() {
           Custom isn&apos;t always the right call. Sometimes the subscription is the better deal, and
           I&apos;ll tell you if that&apos;s the case.
         </p>
-        <a
-          href="#contact"
-          className="inline-block mt-8 bg-blue hover:bg-blue-dark text-paper font-bold text-lg px-8 py-4"
-        >
-          Let&apos;s look at what you&apos;re paying for
-        </a>
       </div>
     </section>
   );

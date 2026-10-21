@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { site, paths, telHref, areaText } from "@/lib/site";
+import { site, telHref, areaText } from "@/lib/site";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -12,8 +11,6 @@ export default function Footer() {
           <p className="mt-4">&copy; {year} {site.name}</p>
         </div>
         <div className="flex flex-col gap-2">
-          <Link href={paths.home} className="hover:text-paper">Home tech help</Link>
-          <Link href={paths.business} className="hover:text-paper">Small business systems</Link>
           <a href={telHref(site.phone)} className="hover:text-paper">{site.phone}</a>
           <a href={`mailto:${site.email}`} className="hover:text-paper">{site.email}</a>
         </div>
