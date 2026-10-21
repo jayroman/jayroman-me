@@ -3,9 +3,11 @@ import PageHero from "@/components/PageHero";
 import Business, { BusinessPains } from "@/components/Business";
 import SoftwareYouOwn from "@/components/SoftwareYouOwn";
 import About from "@/components/About";
+import HomeTeaser from "@/components/HomeTeaser";
+import Link from "next/link";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { areaText } from "@/lib/site";
+import { areaText, paths } from "@/lib/site";
 
 export const businessMetadata = {
   title: "Jay Roman | Small Business Systems | Cashiers, Sapphire, Highlands NC",
@@ -27,10 +29,19 @@ export default function BusinessPage() {
           </>
         }
         messageLabel="Book a free 30-minute call"
+        aside={
+          <>
+            Need tech help at home?{" "}
+            <Link href={paths.home} className="font-bold underline underline-offset-4 hover:text-blue-light">
+              See home tech help
+            </Link>
+          </>
+        }
       />
       <BusinessPains />
       <SoftwareYouOwn />
       <Business />
+      <HomeTeaser />
       <About focus="business" />
       <Contact defaultTopic="My business" />
       <Footer />
