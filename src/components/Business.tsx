@@ -92,9 +92,6 @@ export default function Business() {
               </li>
             ))}
           </ol>
-          <a href="#contact" className="inline-block mt-8 bg-blue hover:bg-blue-dark text-paper font-bold text-lg px-8 py-4">
-            Book a free 30-minute call
-          </a>
         </div>
       </section>
   );
