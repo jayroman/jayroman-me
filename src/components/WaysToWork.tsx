@@ -60,6 +60,7 @@ export default function WaysToWork() {
                 "Away-home monitoring for a second home",
                 "Automated scheduling, follow-up, and invoicing",
                 "Custom software you own",
+                "Getting more out of software you already pay for",
               ].map((p) => (
                 <li key={p} className="flex gap-3">
                   <span aria-hidden className="mt-2 h-2 w-2 shrink-0 bg-blue" />

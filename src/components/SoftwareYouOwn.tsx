@@ -55,10 +55,27 @@ export default function SoftwareYouOwn() {
           ))}
         </div>
 
-        <p className="text-slate text-sm mt-6 max-w-2xl">
-          Custom isn&apos;t always the right call. Sometimes the subscription is the better deal, and
-          I&apos;ll tell you if that&apos;s the case.
-        </p>
+        <div className="mt-8 bg-blue-light border-2 border-blue p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
+          <div className="lg:col-span-8">
+            <h3 className="display-sm text-xl sm:text-2xl text-blue-dark">
+              Or make the subscription work harder
+            </h3>
+            <p className="text-ink/85 text-lg leading-relaxed mt-3">
+              Custom isn&apos;t always the right call. Sometimes the subscription is the better deal,
+              and I&apos;ll tell you if that&apos;s the case. Then I&apos;ll help you get your
+              money&apos;s worth from it: drop the seats and add-ons you don&apos;t use, set it up
+              around how you actually work, and connect it to the other tools you rely on.
+            </p>
+          </div>
+          <div className="lg:col-span-4 lg:text-right">
+            <a
+              href="#contact"
+              className="inline-block bg-blue hover:bg-blue-dark text-paper font-bold text-lg px-6 py-4"
+            >
+              Let&apos;s look at what you&apos;re paying for
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
