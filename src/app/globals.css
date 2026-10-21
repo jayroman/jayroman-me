@@ -13,18 +13,18 @@ html {
 @theme {
   --font-sans: var(--font-archivo), system-ui, sans-serif;
 
-  /* Night-sky navy, cool mist, porch-light amber */
-  --color-ink: #13203a;
-  --color-ink-2: #1c2c4c;
-  --color-mist: #eef1f4;
+  /* Slate blue and white */
+  --color-blue: #4a6a8f;       /* slate blue: primary surfaces and buttons */
+  --color-blue-dark: #3a5675;  /* hover / pressed */
+  --color-blue-light: #dde6f0; /* tinted fills */
+  --color-ink: #1f2f42;        /* deep slate: body text */
+  --color-slate: #5b6b7d;      /* muted text */
+  --color-mist: #f1f4f8;       /* off-white section background */
   --color-paper: #ffffff;
-  --color-slate: #56657a;
-  --color-rule: #cbd3dc;
-  --color-amber: #f5b82e;
-  --color-amber-dark: #e0a113;
+  --color-rule: #c8d3df;
 }
 
-/* Blocky display type: Archivo, extra-bold, fully expanded */
+/* Blocky display type: Archivo, extra-bold, fully expanded, all caps */
 .display {
   font-family: var(--font-archivo), system-ui, sans-serif;
   font-weight: 800;
@@ -44,6 +44,6 @@ html {
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-amber);
+  outline: 3px solid #8fb0d3;
   outline-offset: 3px;
 }

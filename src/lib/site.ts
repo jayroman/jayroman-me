@@ -1,17 +1,20 @@
-// Contact details used across the site. Fill these in and redeploy.
+// Contact details and routes used across the site.
 export const site = {
   name: "Jay Roman",
   tagline: "Tech help for Plateau homes and local businesses",
-  // e.g. "(828) 555-1234" — leave empty to hide
   phone: "(828) 482-7550",
-  // e.g. "jay@jayroman.me" — leave empty to hide
   email: "jay@jayroman.me",
   // Formspree form ID (the part after /f/). If empty, the form opens an email instead.
   formspreeId: "",
   area: ["Cashiers", "Sapphire", "Highlands", "Glenville", "Lake Toxaway"],
 };
 
-// "Cashiers, Sapphire, Highlands, Glenville, Lake Toxaway, and surrounding areas"
+// Where each page lives. Option 1: home tech at "/". Option 2: home tech at "/home".
+export const paths = {
+  home: "/",
+  business: "/business",
+};
+
 export const areaText = `${site.area.join(", ")}, and surrounding areas`;
 
 export const telHref = (p: string) => `tel:${p.replace(/[^\d+]/g, "")}`;

@@ -24,8 +24,7 @@ const services = [
   },
   {
     title: "Tools built for how you work",
-    description:
-      "When off-the-shelf software doesn't fit your operation, I build something that does.",
+    description: "When off-the-shelf software doesn't fit your operation, I build something that does.",
   },
 ];
 
@@ -49,49 +48,51 @@ const steps = [
 
 export default function Business() {
   return (
-    <section id="business" className="bg-paper py-20 sm:py-28 border-t-2 border-ink">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="display text-3xl sm:text-4xl lg:text-5xl max-w-4xl">
-          Stop losing time and money to busywork.
-        </h2>
-        <p className="text-slate text-lg leading-relaxed max-w-2xl mt-6">
-          For local and small businesses. The biggest gains usually aren&apos;t complicated, just
-          things nobody&apos;s gotten around to fixing.
-        </p>
-
-        <ul className="mt-12 max-w-3xl">
-          {pains.map((p) => (
-            <li key={p} className="border-b-2 border-mist py-4 text-lg flex gap-4">
-              <span aria-hidden className="mt-2.5 h-2.5 w-2.5 shrink-0 bg-amber" />
-              {p}
-            </li>
-          ))}
-        </ul>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 border-t-2 border-l-2 border-ink mt-16">
-          {services.map((s) => (
-            <div key={s.title} className="border-r-2 border-b-2 border-ink p-8">
-              <h3 className="display-sm text-2xl">{s.title}</h3>
-              <p className="text-slate leading-relaxed mt-3">{s.description}</p>
-            </div>
-          ))}
+    <>
+      <section className="bg-paper py-20 sm:py-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="display text-3xl sm:text-4xl">Sound familiar?</h2>
+          <ul className="mt-8 max-w-3xl">
+            {pains.map((p) => (
+              <li key={p} className="border-b-2 border-mist py-4 text-lg flex gap-4">
+                <span aria-hidden className="mt-2.5 h-2.5 w-2.5 shrink-0 bg-blue" />
+                {p}
+              </li>
+            ))}
+          </ul>
         </div>
+      </section>
 
-        <h3 className="display text-3xl sm:text-4xl mt-20">How a project works</h3>
-        <ol className="grid grid-cols-1 md:grid-cols-3 gap-0 mt-8 bg-ink text-paper">
-          {steps.map((s, i) => (
-            <li key={s.title} className="p-8 border-ink-2 md:border-l-2 first:border-l-0 border-t-2 md:border-t-0 first:border-t-0">
-              <span className="display text-5xl text-amber">{i + 1}</span>
-              <h4 className="display-sm text-xl mt-4">{s.title}</h4>
-              <p className="text-mist/80 leading-relaxed mt-3">{s.description}</p>
-            </li>
-          ))}
-        </ol>
+      <section className="bg-mist py-20 sm:py-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="display text-3xl sm:text-4xl">How I help</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 border-t-2 border-l-2 border-blue mt-10">
+            {services.map((s) => (
+              <div key={s.title} className="bg-paper border-r-2 border-b-2 border-blue p-8">
+                <h3 className="display-sm text-xl sm:text-2xl text-blue-dark">{s.title}</h3>
+                <p className="text-slate leading-relaxed mt-3">{s.description}</p>
+              </div>
+            ))}
+          </div>
 
-        <a href="#contact" className="inline-block mt-10 bg-amber hover:bg-amber-dark text-ink font-bold text-lg px-8 py-4">
-          Book a free 30-minute call
-        </a>
-      </div>
-    </section>
+          <h2 className="display text-3xl sm:text-4xl mt-20">How a project works</h2>
+          <ol className="grid grid-cols-1 md:grid-cols-3 mt-10 bg-blue text-paper">
+            {steps.map((s, i) => (
+              <li
+                key={s.title}
+                className="p-8 border-paper/20 border-t-2 first:border-t-0 md:border-t-0 md:border-l-2 md:first:border-l-0"
+              >
+                <span className="display text-5xl text-blue-light">{i + 1}</span>
+                <h3 className="display-sm text-xl mt-4">{s.title}</h3>
+                <p className="text-paper/85 leading-relaxed mt-3">{s.description}</p>
+              </li>
+            ))}
+          </ol>
+          <a href="#contact" className="inline-block mt-10 bg-blue hover:bg-blue-dark text-paper font-bold text-lg px-8 py-4">
+            Book a free 30-minute call
+          </a>
+        </div>
+      </section>
+    </>
   );
 }
