@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <header className="bg-ink text-paper">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24 pb-0">
-        <h1 className="display text-[2.6rem] sm:text-6xl lg:text-[5.5rem] max-w-5xl">
+        <h1 className="display text-[1.85rem] sm:text-5xl lg:text-6xl max-w-4xl">
           Tech help for homes and businesses on the Plateau.
         </h1>
         <p className="text-mist/80 text-lg sm:text-xl leading-relaxed max-w-2xl mt-8">

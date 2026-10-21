@@ -33,7 +33,7 @@ export default function HomeTech() {
   return (
     <section id="home-tech" className="bg-mist py-20 sm:py-28">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="display text-4xl sm:text-5xl lg:text-6xl max-w-4xl">
+        <h2 className="display text-3xl sm:text-4xl lg:text-5xl max-w-4xl">
           Home tech that works whether you&apos;re here or not.
         </h2>
         <p className="text-slate text-lg leading-relaxed max-w-2xl mt-6">
