@@ -11,7 +11,7 @@ export const site = {
 
 // Where each page lives. Option 1: home tech at "/". Option 2: home tech at "/home".
 export const paths = {
-  home: "/",
+  home: "/home",
   business: "/business",
 };
 
