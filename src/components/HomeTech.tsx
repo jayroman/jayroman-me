@@ -53,7 +53,7 @@ export default function HomeTech() {
         <div className="mt-20">
           <h3 className="display text-3xl sm:text-4xl">Simple rates</h3>
           <p className="text-slate leading-relaxed mt-3 max-w-xl">
-            No contracts, no surprise fees. I&apos;ll tell you what I think it will take before I start.
+            No contracts, no surprise fees. I&apos;ll tell you what I think it will take before I start. Outside the Plateau? Ask; I travel to surrounding areas too.
           </p>
           <dl className="mt-8 border-t-2 border-ink">
             {rates.map((r) => (

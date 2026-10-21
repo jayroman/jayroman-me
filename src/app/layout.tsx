@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Year-round, local tech help for Plateau homes: Wi-Fi, TVs, speakers, smart devices, and away-home alerts. Plus practical systems that save local businesses time and money.",
   openGraph: {
     title: "Jay Roman | Tech Help on the Plateau",
-    description: "Home tech help and small business systems for Cashiers, Sapphire, and Highlands NC.",
+    description: "Home tech help and small business systems for Cashiers, Sapphire, Highlands, and surrounding areas in Western NC.",
     url: "https://jayroman.me",
     siteName: "Jay Roman",
     type: "website",

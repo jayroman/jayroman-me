@@ -1,4 +1,4 @@
-import { site, telHref } from "@/lib/site";
+import { site, telHref, areaText } from "@/lib/site";
 
 export default function Hero() {
   return (
@@ -9,7 +9,7 @@ export default function Hero() {
         </h1>
         <p className="text-mist/80 text-lg sm:text-xl leading-relaxed max-w-2xl mt-8">
           I&apos;m a full-time resident with years in software. I keep the tech in mountain homes
-          working and help local businesses get their time back. Serving {site.area.join(", ")}.
+          working and help local businesses get their time back. Serving {areaText}.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-10">

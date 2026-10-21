@@ -11,4 +11,7 @@ export const site = {
   area: ["Cashiers", "Sapphire", "Highlands", "Glenville", "Lake Toxaway"],
 };
 
+// "Cashiers, Sapphire, Highlands, Glenville, Lake Toxaway, and surrounding areas"
+export const areaText = `${site.area.join(", ")}, and surrounding areas`;
+
 export const telHref = (p: string) => `tel:${p.replace(/[^\d+]/g, "")}`;
