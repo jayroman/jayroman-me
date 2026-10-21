@@ -8,13 +8,14 @@ const pains = [
 
 export default function PainPoints() {
   return (
-    <section className="bg-parchment-100 py-24">
+    <section id="business" className="bg-parchment-50 py-24 border-t border-parchment-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <span className="text-linen-500 text-sm font-semibold uppercase tracking-wider">For your business</span>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-4">
           <div className="lg:col-span-4">
-            <p className="font-display text-2xl text-cream-900 leading-snug">
+            <h2 className="font-display text-3xl text-cream-900 leading-snug">
               You&apos;re probably losing money on things that can be fixed.
-            </p>
+            </h2>
           </div>
           <div className="lg:col-span-8">
             <ul className="space-y-5">
@@ -27,7 +28,7 @@ export default function PainPoints() {
             </ul>
             <p className="text-cream-700 mt-8 text-base">
               These aren&apos;t problems you have to live with.{" "}
-              <a href="#services" className="text-cream-900 font-semibold underline underline-offset-4 hover:text-linen-600">
+              <a href="#business-services" className="text-cream-900 font-semibold underline underline-offset-4 hover:text-linen-600">
                 Here&apos;s how we fix them.
               </a>
             </p>

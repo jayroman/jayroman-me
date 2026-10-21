@@ -27,9 +27,9 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-parchment-100 py-24 border-t border-parchment-300">
+    <section id="business-services" className="bg-parchment-50 py-24 border-t border-parchment-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-display text-3xl text-cream-900 mb-2">What we do</h2>
+        <h2 className="font-display text-3xl text-cream-900 mb-2">How I help businesses</h2>
         <p className="text-cream-700 mb-12">Four things. Done well.</p>
 
         <div className="divide-y divide-parchment-300">

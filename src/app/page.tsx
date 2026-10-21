@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import HomeTech from "@/components/HomeTech";
 import PainPoints from "@/components/PainPoints";
 import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
@@ -12,6 +13,7 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
+      <HomeTech />
       <PainPoints />
       <Services />
       <HowItWorks />

@@ -23,7 +23,7 @@ export default function HowItWorks() {
   return (
     <section className="bg-forest-900 py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-display text-3xl text-cream-200 mb-16">How this works</h2>
+        <h2 className="font-display text-3xl text-cream-200 mb-16">How a business project works</h2>
 
         <div className="space-y-14">
           {steps.map((step, i) => (
