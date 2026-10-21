@@ -4,34 +4,44 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 @theme {
-  /* Fonts */
-  --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-display: var(--font-lora), Georgia, serif;
+  --font-sans: var(--font-archivo), system-ui, sans-serif;
 
-  /* Deep muted forest backgrounds */
-  --color-forest-950: #1a2420;
-  --color-forest-900: #1f2d28;
-  --color-forest-800: #263830;
-  --color-forest-700: #304540;
+  /* Night-sky navy, cool mist, porch-light amber */
+  --color-ink: #13203a;
+  --color-ink-2: #1c2c4c;
+  --color-mist: #eef1f4;
+  --color-paper: #ffffff;
+  --color-slate: #56657a;
+  --color-rule: #cbd3dc;
+  --color-amber: #f5b82e;
+  --color-amber-dark: #e0a113;
+}
 
-  /* Warm parchment for light sections */
-  --color-parchment-50:  #faf7f2;
-  --color-parchment-100: #f5f0e8;
-  --color-parchment-200: #ede5d8;
-  --color-parchment-300: #ddd5c5;
+/* Blocky display type: Archivo, extra-bold, fully expanded */
+.display {
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  font-weight: 800;
+  font-stretch: 125%;
+  letter-spacing: -0.015em;
+  line-height: 0.98;
+}
 
-  /* Muted linen/tan accent */
-  --color-linen-300: #ddd0bc;
-  --color-linen-400: #c9b99a;
-  --color-linen-500: #b8a888;
-  --color-linen-600: #a89678;
+.display-sm {
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  font-weight: 750;
+  font-stretch: 115%;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
 
-  /* Warm cream text scale */
-  --color-cream-200: #e8e0d5;
-  --color-cream-400: #c8c0b5;
-  --color-cream-600: #988e82;
-  --color-cream-700: #6b6358;
-  --color-cream-800: #4a4440;
-  --color-cream-900: #2a2420;
+:focus-visible {
+  outline: 3px solid var(--color-amber);
+  outline-offset: 3px;
 }

@@ -1,50 +1,55 @@
-import { site } from "@/lib/site";
-
-const lanes = [
-  {
-    href: "#home-tech",
-    label: "For your home",
-    title: "Wi-Fi, TVs, Sonos, smart devices — fixed and working.",
-    note: "Full-time and second-home owners",
-  },
-  {
-    href: "#business",
-    label: "For your business",
-    title: "Stop losing time and money to busywork.",
-    note: "Local and small businesses",
-  },
-];
+import { site, telHref } from "@/lib/site";
 
 export default function Hero() {
   return (
-    <section className="relative bg-forest-950 overflow-hidden">
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-24 w-full">
-        <p className="text-linen-400 text-sm font-semibold uppercase tracking-wider mb-6">
-          {site.area.slice(0, 3).join(" · ")}
-        </p>
-        <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-cream-200 leading-tight mb-8 max-w-4xl">
-          Your year-round tech help on the Plateau.
+    <header className="bg-ink text-paper">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24 pb-0">
+        <h1 className="display text-[2.6rem] sm:text-6xl lg:text-[5.5rem] max-w-5xl">
+          Tech help for homes and businesses on the Plateau.
         </h1>
-        <p className="text-cream-400 text-lg leading-relaxed max-w-2xl mb-14">
+        <p className="text-mist/80 text-lg sm:text-xl leading-relaxed max-w-2xl mt-8">
           I&apos;m a full-time resident with years in software. I keep the tech in mountain homes
-          working, and I help local businesses get their time back.
+          working and help local businesses get their time back. Serving {site.area.join(", ")}.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl">
-          {lanes.map((lane) => (
-            <a
-              key={lane.href}
-              href={lane.href}
-              className="group block rounded-xl border border-forest-700 bg-forest-900 hover:bg-forest-800 hover:border-linen-500 p-7 transition-colors"
-            >
-              <span className="text-linen-400 text-xs font-semibold uppercase tracking-wider">{lane.label}</span>
-              <p className="font-display text-2xl text-cream-200 mt-3 mb-4 leading-snug">{lane.title}</p>
-              <span className="text-cream-600 text-sm">{lane.note}</span>
-              <span className="float-right text-linen-400 group-hover:translate-x-1 transition-transform">→</span>
-            </a>
-          ))}
+        <div className="flex flex-col sm:flex-row gap-4 mt-10">
+          <a
+            href={telHref(site.phone)}
+            className="bg-amber hover:bg-amber-dark text-ink px-7 py-5 border-2 border-amber"
+          >
+            <span className="block text-sm font-semibold">Call or text</span>
+            <span className="display-sm block text-2xl sm:text-3xl">{site.phone}</span>
+          </a>
+          <a
+            href="#contact"
+            className="flex items-center px-7 py-5 border-2 border-paper/40 hover:border-paper font-semibold text-lg"
+          >
+            Send a message
+          </a>
         </div>
       </div>
-    </section>
+
+      {/* Two lanes as solid slabs */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 sm:mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <a href="#home-tech" className="block bg-amber text-ink p-8 sm:p-10 hover:bg-amber-dark">
+            <h2 className="display text-3xl sm:text-4xl">For your home</h2>
+            <p className="mt-4 text-lg leading-relaxed max-w-md">
+              Wi-Fi, TVs, speakers, smart devices, and alerts for homes that sit empty. Fixed and
+              working, whether you&apos;re here or not.
+            </p>
+            <span className="inline-block mt-6 font-bold underline underline-offset-4">See home services</span>
+          </a>
+          <a href="#business" className="block bg-paper text-ink p-8 sm:p-10 hover:bg-mist">
+            <h2 className="display text-3xl sm:text-4xl">For your business</h2>
+            <p className="mt-4 text-lg leading-relaxed max-w-md">
+              Missed calls, late quotes, and paperwork that eats your evenings. Practical systems
+              that take busywork off your plate.
+            </p>
+            <span className="inline-block mt-6 font-bold underline underline-offset-4">See business services</span>
+          </a>
+        </div>
+      </div>
+    </header>
   );
 }
