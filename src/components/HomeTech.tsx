@@ -32,12 +32,12 @@ const rates = [
 export default function HomeTech() {
   return (
     <>
-      <section className="bg-mist py-20 sm:py-24">
+      <section className="bg-mist py-12 sm:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="display text-3xl sm:text-4xl">What I help with</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 border-t-2 border-l-2 border-blue mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 border-t-2 border-l-2 border-blue mt-8">
             {services.map((s) => (
-              <div key={s.title} className="bg-paper border-r-2 border-b-2 border-blue p-8">
+              <div key={s.title} className="bg-paper border-r-2 border-b-2 border-blue p-6 sm:p-7">
                 <h3 className="display-sm text-xl sm:text-2xl text-blue-dark">{s.title}</h3>
                 <p className="text-slate leading-relaxed mt-3">{s.description}</p>
               </div>
@@ -46,8 +46,8 @@ export default function HomeTech() {
         </div>
       </section>
 
-      <section className="bg-paper py-20 sm:py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10">
+      <section className="bg-paper py-12 sm:py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10">
           <div className="lg:col-span-5">
             <h2 className="display text-3xl sm:text-4xl">Simple rates</h2>
             <p className="text-slate leading-relaxed mt-4">

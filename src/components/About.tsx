@@ -1,7 +1,7 @@
 export default function About({ focus }: { focus: "home" | "business" }) {
   return (
-    <section className="bg-paper py-20 sm:py-24 border-t-2 border-mist">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10">
+    <section className="bg-paper py-12 sm:py-16 border-t-2 border-mist">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10">
         <h2 className="display text-3xl sm:text-4xl lg:col-span-5">I&apos;m Jay Roman.</h2>
         <div className="lg:col-span-7 space-y-5 text-lg leading-relaxed text-ink/85 max-w-2xl">
           {focus === "home" ? (

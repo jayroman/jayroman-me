@@ -3,7 +3,7 @@ import { paths } from "@/lib/site";
 
 export default function HomeTeaser() {
   return (
-    <section className="bg-ink text-paper py-16 sm:py-20">
+    <section className="bg-ink text-paper py-10 sm:py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
         <div className="lg:col-span-8">
           <h2 className="display text-2xl sm:text-4xl">Need tech help at home?</h2>

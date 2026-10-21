@@ -49,7 +49,7 @@ const steps = [
 
 export function BusinessPains() {
   return (
-      <section className="bg-paper py-20 sm:py-24">
+      <section className="bg-paper py-12 sm:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="display text-3xl sm:text-4xl">Sound familiar?</h2>
           <ul className="mt-8 max-w-3xl">
@@ -67,24 +67,24 @@ export function BusinessPains() {
 
 export default function Business() {
   return (
-      <section className="bg-paper py-20 sm:py-24 border-t-2 border-mist">
+      <section className="bg-paper py-12 sm:py-16 border-t-2 border-mist">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="display text-3xl sm:text-4xl">How I help</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 border-t-2 border-l-2 border-blue mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 border-t-2 border-l-2 border-blue mt-8">
             {services.map((s) => (
-              <div key={s.title} className="bg-paper border-r-2 border-b-2 border-blue p-8">
+              <div key={s.title} className="bg-paper border-r-2 border-b-2 border-blue p-6 sm:p-7">
                 <h3 className="display-sm text-xl sm:text-2xl text-blue-dark">{s.title}</h3>
                 <p className="text-slate leading-relaxed mt-3">{s.description}</p>
               </div>
             ))}
           </div>
 
-          <h2 className="display text-3xl sm:text-4xl mt-20">How a project works</h2>
-          <ol className="grid grid-cols-1 md:grid-cols-3 mt-10 bg-blue text-paper">
+          <h2 className="display text-3xl sm:text-4xl mt-12">How a project works</h2>
+          <ol className="grid grid-cols-1 md:grid-cols-3 mt-8 bg-blue text-paper">
             {steps.map((s, i) => (
               <li
                 key={s.title}
-                className="p-8 border-paper/20 border-t-2 first:border-t-0 md:border-t-0 md:border-l-2 md:first:border-l-0"
+                className="p-6 sm:p-7 border-paper/20 border-t-2 first:border-t-0 md:border-t-0 md:border-l-2 md:first:border-l-0"
               >
                 <span className="display text-5xl text-blue-light">{i + 1}</span>
                 <h3 className="display-sm text-xl mt-4">{s.title}</h3>
@@ -92,7 +92,7 @@ export default function Business() {
               </li>
             ))}
           </ol>
-          <a href="#contact" className="inline-block mt-10 bg-blue hover:bg-blue-dark text-paper font-bold text-lg px-8 py-4">
+          <a href="#contact" className="inline-block mt-8 bg-blue hover:bg-blue-dark text-paper font-bold text-lg px-8 py-4">
             Book a free 30-minute call
           </a>
         </div>

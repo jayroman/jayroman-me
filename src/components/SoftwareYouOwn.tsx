@@ -23,7 +23,7 @@ const rows = [
 
 export default function SoftwareYouOwn() {
   return (
-    <section className="bg-mist py-20 sm:py-24">
+    <section className="bg-mist py-12 sm:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="display text-3xl sm:text-4xl max-w-4xl">
           Paying for software you only use part of?
@@ -34,7 +34,7 @@ export default function SoftwareYouOwn() {
           over a few years, does the job better, and belongs to you.
         </p>
 
-        <div className="mt-10 border-2 border-blue bg-paper">
+        <div className="mt-8 border-2 border-blue bg-paper">
           <div className="hidden md:grid grid-cols-12 bg-blue text-paper">
             <div className="col-span-3 p-5" />
             <div className="col-span-4 p-5 display-sm text-lg">Subscription platform</div>

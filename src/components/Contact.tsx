@@ -53,7 +53,7 @@ export default function Contact({ defaultTopic = "My home" }: { defaultTopic?: "
   const labelClass = "block text-sm font-bold mb-2";
 
   return (
-    <section id="contact" className="bg-blue text-paper py-20 sm:py-24">
+    <section id="contact" className="bg-blue text-paper py-12 sm:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
           <h2 className="display text-3xl sm:text-4xl">How can I help?</h2>
@@ -61,7 +61,7 @@ export default function Contact({ defaultTopic = "My home" }: { defaultTopic?: "
             Calling or texting is fastest. Or send a message and I&apos;ll get back to you within one
             business day.
           </p>
-          <a href={telHref(site.phone)} className="display block text-3xl sm:text-4xl hover:text-blue-light mt-10">
+          <a href={telHref(site.phone)} className="display block text-3xl sm:text-4xl hover:text-blue-light mt-8">
             {site.phone}
           </a>
           <a href={`mailto:${site.email}`} className="block text-lg underline underline-offset-4 hover:text-blue-light mt-4">
