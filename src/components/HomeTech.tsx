@@ -1,4 +1,4 @@
-import { site, telHref } from "@/lib/site";
+import { site, telHref, rates } from "@/lib/site";
 
 const services = [
   {
@@ -21,12 +21,6 @@ const services = [
     description:
       "Leak, temperature, and power-loss sensors that warn you before a small problem becomes a big one, plus a tech check before you arrive.",
   },
-];
-
-const rates = [
-  { price: "$125", label: "First hour on-site" },
-  { price: "$95", label: "Each additional hour" },
-  { price: "$75", label: "Per hour, remote help" },
 ];
 
 export default function HomeTech() {

@@ -15,6 +15,13 @@ export const paths = {
   business: "/business",
 };
 
+// Hourly rates for on-site and remote fixes (same for homes and businesses)
+export const rates = [
+  { price: "$125", label: "First hour on-site" },
+  { price: "$95", label: "Each additional hour" },
+  { price: "$75", label: "Per hour, remote help" },
+];
+
 export const areaText = `${site.area.join(", ")}, and surrounding areas`;
 
 export const telHref = (p: string) => `tel:${p.replace(/[^\d+]/g, "")}`;

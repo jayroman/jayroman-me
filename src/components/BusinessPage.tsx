@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import PageHero from "@/components/PageHero";
 import Business, { BusinessPains } from "@/components/Business";
 import SoftwareYouOwn from "@/components/SoftwareYouOwn";
+import BusinessPricing from "@/components/BusinessPricing";
 import About from "@/components/About";
 import HomeTeaser from "@/components/HomeTeaser";
 import Link from "next/link";
@@ -41,6 +42,7 @@ export default function BusinessPage() {
       <BusinessPains />
       <SoftwareYouOwn />
       <Business />
+      <BusinessPricing />
       <HomeTeaser />
       <About focus="business" />
       <Contact defaultTopic="My business" />
