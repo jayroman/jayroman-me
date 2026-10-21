@@ -29,7 +29,7 @@ export default function SoftwareYouOwn() {
           Paying for software you only use part of?
         </h2>
         <p className="text-ink/85 text-lg leading-relaxed mt-6 max-w-2xl">
-          One project I&apos;m often asked about: a lot of local businesses pay a monthly subscription for a platform built for everyone,
+          Worth a look for any business: a lot of companies pay a monthly subscription for a platform built for everyone,
           and use a fraction of it. Often a custom tool built around exactly what you do costs less
           over a few years, does the job better, and belongs to you.
         </p>
