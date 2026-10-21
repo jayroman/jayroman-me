@@ -4,10 +4,12 @@ export default function PageHero({
   title,
   intro,
   messageLabel = "Send a message",
+  aside,
 }: {
   title: string;
   intro: React.ReactNode;
   messageLabel?: string;
+  aside?: React.ReactNode;
 }) {
   return (
     <header className="bg-blue text-paper">
@@ -26,6 +28,7 @@ export default function PageHero({
             {messageLabel}
           </a>
         </div>
+        {aside && <p className="mt-8 text-paper/90 text-lg">{aside}</p>}
       </div>
     </header>
   );

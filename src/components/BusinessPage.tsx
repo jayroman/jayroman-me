@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import PageHero from "@/components/PageHero";
-import Business from "@/components/Business";
+import Business, { BusinessPains } from "@/components/Business";
+import SoftwareYouOwn from "@/components/SoftwareYouOwn";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -20,12 +21,15 @@ export default function BusinessPage() {
         title="Stop losing time and money to busywork."
         intro={
           <>
-            Missed calls, late quotes, and paperwork that eats your evenings. I build practical
-            systems that take it off your plate. For local businesses in {areaText}.
+            Missed calls, late quotes, paperwork that eats your evenings, and software subscriptions
+            you only half use. I build practical systems, and custom tools you own. For local
+            businesses in {areaText}.
           </>
         }
         messageLabel="Book a free 30-minute call"
       />
+      <BusinessPains />
+      <SoftwareYouOwn />
       <Business />
       <About focus="business" />
       <Contact defaultTopic="My business" />

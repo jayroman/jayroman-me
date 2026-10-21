@@ -2,9 +2,11 @@ import Nav from "@/components/Nav";
 import PageHero from "@/components/PageHero";
 import HomeTech from "@/components/HomeTech";
 import About from "@/components/About";
+import BusinessTeaser from "@/components/BusinessTeaser";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { areaText } from "@/lib/site";
+import Link from "next/link";
+import { areaText, paths } from "@/lib/site";
 
 export const homeMetadata = {
   title: "Jay Roman | Home Tech Help | Cashiers, Sapphire, Highlands NC",
@@ -24,8 +26,17 @@ export default function HomePage() {
             I&apos;m a full-time resident who comes to you and fixes it. Serving {areaText}.
           </>
         }
+        aside={
+          <>
+            Run a local business?{" "}
+            <Link href={paths.business} className="font-bold underline underline-offset-4 hover:text-blue-light">
+              See business services
+            </Link>
+          </>
+        }
       />
       <HomeTech />
+      <BusinessTeaser />
       <About focus="home" />
       <Contact defaultTopic="My home" />
       <Footer />

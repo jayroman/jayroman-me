@@ -23,8 +23,9 @@ const services = [
       "Automatic follow-up, answers to common questions, and lead capture, so you stay in the running even when you're on a job site.",
   },
   {
-    title: "Tools built for how you work",
-    description: "When off-the-shelf software doesn't fit your operation, I build something that does.",
+    title: "Software you own",
+    description:
+      "When a subscription platform doesn't fit, or costs too much for what you use, I build a tool around how you work. It's yours.",
   },
 ];
 
@@ -46,9 +47,8 @@ const steps = [
   },
 ];
 
-export default function Business() {
+export function BusinessPains() {
   return (
-    <>
       <section className="bg-paper py-20 sm:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="display text-3xl sm:text-4xl">Sound familiar?</h2>
@@ -62,8 +62,12 @@ export default function Business() {
           </ul>
         </div>
       </section>
+  );
+}
 
-      <section className="bg-mist py-20 sm:py-24">
+export default function Business() {
+  return (
+      <section className="bg-paper py-20 sm:py-24 border-t-2 border-mist">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="display text-3xl sm:text-4xl">How I help</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 border-t-2 border-l-2 border-blue mt-10">
@@ -93,6 +97,5 @@ export default function Business() {
           </a>
         </div>
       </section>
-    </>
   );
 }
