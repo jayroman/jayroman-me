@@ -33,7 +33,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 sm:mt-20">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <a href="#home-tech" className="block bg-amber text-ink p-8 sm:p-10 hover:bg-amber-dark">
-            <h2 className="display text-3xl sm:text-4xl">For your home</h2>
+            <h2 className="display text-2xl sm:text-3xl">For your home</h2>
             <p className="mt-4 text-lg leading-relaxed max-w-md">
               Wi-Fi, TVs, speakers, smart devices, and alerts for homes that sit empty. Fixed and
               working, whether you&apos;re here or not.
@@ -41,7 +41,7 @@ export default function Hero() {
             <span className="inline-block mt-6 font-bold underline underline-offset-4">See home services</span>
           </a>
           <a href="#business" className="block bg-paper text-ink p-8 sm:p-10 hover:bg-mist">
-            <h2 className="display text-3xl sm:text-4xl">For your business</h2>
+            <h2 className="display text-2xl sm:text-3xl">For your business</h2>
             <p className="mt-4 text-lg leading-relaxed max-w-md">
               Missed calls, late quotes, and paperwork that eats your evenings. Practical systems
               that take busywork off your plate.
