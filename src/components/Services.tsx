@@ -41,9 +41,9 @@ export default function Services() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t-2 border-l-2 border-blue mt-8">
           {services.map((s) => (
-            <div key={s.title} className="bg-paper border-r-2 border-b-2 border-blue p-6 sm:p-7">
+            <div key={s.title} className="bg-paper border-r-2 border-b-2 border-blue p-6 sm:p-7 grid grid-rows-subgrid row-span-2 gap-y-3">
               <h3 className="display-sm text-lg sm:text-xl text-blue-dark">{s.title}</h3>
-              <p className="text-slate leading-relaxed mt-3">{s.description}</p>
+              <p className="text-slate leading-relaxed">{s.description}</p>
             </div>
           ))}
         </div>
