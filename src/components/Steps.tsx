@@ -21,19 +21,19 @@ export default function Steps() {
     <section className="bg-mist py-12 sm:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="display text-3xl sm:text-4xl">How a project works</h2>
-        <ol className="grid grid-cols-1 md:grid-cols-3 mt-8 bg-blue text-paper">
+        <ol className="grid grid-cols-1 md:grid-cols-3 mt-8 bg-navy text-paper">
           {steps.map((s, i) => (
             <li
               key={s.title}
               className="p-6 sm:p-7 border-paper/20 border-t-2 first:border-t-0 md:border-t-0 md:border-l-2 md:first:border-l-0"
             >
-              <span className="display text-5xl text-blue-light">{i + 1}</span>
+              <span className="display text-5xl text-accent-light">{i + 1}</span>
               <h3 className="display-sm text-xl mt-4">{s.title}</h3>
               <p className="text-paper/85 leading-relaxed mt-3">{s.description}</p>
             </li>
           ))}
         </ol>
-        <a href="#contact" className="inline-block mt-8 bg-blue hover:bg-blue-dark text-paper font-bold text-lg px-8 py-4">
+        <a href="#contact" className="inline-block mt-8 bg-navy hover:bg-navy-2 text-paper font-bold text-lg px-8 py-4">
           Book a free 30-minute call
         </a>
       </div>

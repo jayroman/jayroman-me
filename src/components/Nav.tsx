@@ -1,4 +1,5 @@
 import { site, telHref } from "@/lib/site";
+import { JRMark } from "@/components/Logo";
 
 const links = [
   { href: "#services", label: "Services" },
@@ -8,16 +9,19 @@ const links = [
 
 export default function Nav() {
   return (
-    <nav className="bg-blue text-paper border-b border-paper/15">
+    <nav className="bg-navy text-paper border-b border-paper/15">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
-        <a href="#" className="display-sm text-lg">Jay Roman</a>
+        <a href="#" className="flex items-center gap-3" aria-label="Jay Roman, home">
+          <JRMark className="h-7 w-auto text-paper" />
+          <span className="display-sm text-lg">Jay Roman</span>
+        </a>
         <div className="flex items-center gap-5">
           {links.map((l) => (
             <a key={l.href} href={l.href} className="hidden md:inline text-sm text-paper/80 hover:text-paper">
               {l.label}
             </a>
           ))}
-          <a href={telHref(site.phone)} className="bg-paper hover:bg-blue-light text-blue-dark font-bold text-sm px-4 py-2">
+          <a href={telHref(site.phone)} className="bg-paper hover:bg-tint text-navy font-bold text-sm px-4 py-2">
             {site.phone}
           </a>
         </div>

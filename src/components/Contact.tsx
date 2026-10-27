@@ -49,11 +49,11 @@ export default function Contact() {
   }
 
   const inputClass =
-    "w-full px-4 py-3 border-2 border-rule bg-paper text-ink placeholder-slate/70 focus:outline-none focus:border-blue";
+    "w-full px-4 py-3 border-2 border-rule bg-paper text-ink placeholder-slate/70 focus:outline-none focus:border-navy";
   const labelClass = "block text-sm font-bold mb-2";
 
   return (
-    <section id="contact" className="bg-blue text-paper py-12 sm:py-16">
+    <section id="contact" className="bg-navy text-paper py-12 sm:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
           <h2 className="display text-3xl sm:text-4xl">How can I help?</h2>
@@ -61,10 +61,10 @@ export default function Contact() {
             Calling or texting is fastest. Or send a message and I&apos;ll get back to you within one
             business day.
           </p>
-          <a href={telHref(site.phone)} className="display block text-3xl sm:text-4xl hover:text-blue-light mt-8">
+          <a href={telHref(site.phone)} className="display block text-3xl sm:text-4xl hover:text-accent-light mt-8">
             {site.phone}
           </a>
-          <a href={`mailto:${site.email}`} className="block text-lg underline underline-offset-4 hover:text-blue-light mt-4">
+          <a href={`mailto:${site.email}`} className="block text-lg underline underline-offset-4 hover:text-accent-light mt-4">
             {site.email}
           </a>
         </div>
@@ -83,9 +83,9 @@ export default function Contact() {
                   {["A quick fix", "Monthly support", "A project", "Not sure yet"].map((t, i) => (
                     <label
                       key={t}
-                      className="flex items-center gap-2 px-4 py-2 border-2 border-rule cursor-pointer has-[:checked]:bg-blue has-[:checked]:text-paper has-[:checked]:border-blue"
+                      className="flex items-center gap-2 px-4 py-2 border-2 border-rule cursor-pointer has-[:checked]:bg-navy has-[:checked]:text-paper has-[:checked]:border-navy"
                     >
-                      <input type="radio" name="topic" value={t} defaultChecked={i === 0} className="accent-blue-dark" />
+                      <input type="radio" name="topic" value={t} defaultChecked={i === 0} className="accent-navy" />
                       {t}
                     </label>
                   ))}
@@ -98,9 +98,9 @@ export default function Contact() {
                   {["Home", "Business"].map((t, i) => (
                     <label
                       key={t}
-                      className="flex items-center gap-2 px-4 py-2 border-2 border-rule cursor-pointer has-[:checked]:bg-blue has-[:checked]:text-paper has-[:checked]:border-blue"
+                      className="flex items-center gap-2 px-4 py-2 border-2 border-rule cursor-pointer has-[:checked]:bg-navy has-[:checked]:text-paper has-[:checked]:border-navy"
                     >
-                      <input type="radio" name="for" value={t} defaultChecked={i === 0} className="accent-blue-dark" />
+                      <input type="radio" name="for" value={t} defaultChecked={i === 0} className="accent-navy" />
                       {t}
                     </label>
                   ))}
@@ -150,7 +150,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={submitting}
-                className="bg-blue hover:bg-blue-dark disabled:opacity-60 text-paper font-bold py-4 px-8 text-lg"
+                className="bg-navy hover:bg-navy-2 disabled:opacity-60 text-paper font-bold py-4 px-8 text-lg"
               >
                 {submitting ? "Sending…" : "Send message"}
               </button>

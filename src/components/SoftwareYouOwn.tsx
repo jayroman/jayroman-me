@@ -34,30 +34,30 @@ export default function SoftwareYouOwn() {
           over a few years, does the job better, and belongs to you.
         </p>
 
-        <div className="mt-8 border-2 border-blue bg-paper">
-          <div className="hidden md:grid grid-cols-12 bg-blue text-paper">
+        <div className="mt-8 border-2 border-navy bg-paper">
+          <div className="hidden md:grid grid-cols-12 bg-navy text-paper">
             <div className="col-span-3 p-5" />
             <div className="col-span-4 p-5 display-sm text-lg">Subscription platform</div>
             <div className="col-span-5 p-5 display-sm text-lg">Custom software you own</div>
           </div>
           {rows.map((r) => (
-            <div key={r.topic} className="grid grid-cols-1 md:grid-cols-12 border-t-2 border-blue first:border-t-0 md:first:border-t-2">
-              <div className="md:col-span-3 p-5 font-bold bg-blue-light md:bg-transparent">{r.topic}</div>
+            <div key={r.topic} className="grid grid-cols-1 md:grid-cols-12 border-t-2 border-navy first:border-t-0 md:first:border-t-2">
+              <div className="md:col-span-3 p-5 font-bold bg-tint md:bg-transparent">{r.topic}</div>
               <div className="md:col-span-4 p-5 text-slate">
                 <span className="md:hidden block text-xs font-bold text-ink mb-1">Subscription platform</span>
                 {r.rented}
               </div>
-              <div className="md:col-span-5 p-5 md:border-l-2 border-blue">
-                <span className="md:hidden block text-xs font-bold text-blue-dark mb-1">Custom software you own</span>
+              <div className="md:col-span-5 p-5 md:border-l-2 border-navy">
+                <span className="md:hidden block text-xs font-bold text-navy mb-1">Custom software you own</span>
                 {r.owned}
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-8 bg-blue-light border-2 border-blue p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
+        <div className="mt-8 bg-tint border-2 border-navy p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
           <div className="lg:col-span-8">
-            <h3 className="display-sm text-xl sm:text-2xl text-blue-dark">
+            <h3 className="display-sm text-xl sm:text-2xl text-navy">
               Or make the subscription work harder
             </h3>
             <p className="text-ink/85 text-lg leading-relaxed mt-3">
@@ -70,7 +70,7 @@ export default function SoftwareYouOwn() {
           <div className="lg:col-span-4 lg:text-right">
             <a
               href="#contact"
-              className="inline-block bg-blue hover:bg-blue-dark text-paper font-bold text-lg px-6 py-4"
+              className="inline-block bg-navy hover:bg-navy-2 text-paper font-bold text-lg px-6 py-4"
             >
               Let&apos;s look at what you&apos;re paying for
             </a>

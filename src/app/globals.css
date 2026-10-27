@@ -13,15 +13,18 @@ html {
 @theme {
   --font-sans: var(--font-archivo), system-ui, sans-serif;
 
-  /* Slate blue and white */
-  --color-blue: #4a6a8f;       /* slate blue: primary surfaces and buttons */
-  --color-blue-dark: #3a5675;  /* hover / pressed */
-  --color-blue-light: #dde6f0; /* tinted fills */
-  --color-ink: #1f2f42;        /* deep slate: body text */
-  --color-slate: #5b6b7d;      /* muted text */
-  --color-mist: #f1f4f8;       /* off-white section background */
+  /* Brand: navy + blue, from the JR logo */
+  --color-navy: #0f172a;        /* primary: header, hero, dark bands, borders */
+  --color-navy-2: #1e293b;      /* hover on navy, strong text */
+  --color-night: #020617;       /* footer */
+  --color-accent: #3b82f6;      /* the logo's blue: small highlights only */
+  --color-accent-light: #60a5fa;/* accent on navy backgrounds */
+  --color-tint: #e8f0fe;        /* pale blue fill */
+  --color-ink: #1f2937;         /* body text */
+  --color-slate: #4b5563;       /* muted text */
+  --color-mist: #f1f5f9;        /* light section background */
   --color-paper: #ffffff;
-  --color-rule: #c8d3df;
+  --color-rule: #d1d5db;
 }
 
 /* Blocky display type: Archivo, extra-bold, fully expanded, all caps */
@@ -44,6 +47,6 @@ html {
 }
 
 :focus-visible {
-  outline: 3px solid #8fb0d3;
+  outline: 3px solid var(--color-accent);
   outline-offset: 3px;
 }
