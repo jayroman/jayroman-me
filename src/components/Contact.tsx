@@ -61,10 +61,10 @@ export default function Contact() {
             Calling or texting is fastest. Or send a message and I&apos;ll get back to you within one
             business day.
           </p>
-          <a href={telHref(site.phone)} className="display block text-3xl sm:text-4xl hover:text-accent-light mt-8">
+          <a href={telHref(site.phone)} className="display block text-3xl sm:text-4xl hover:text-accent mt-8">
             {site.phone}
           </a>
-          <a href={`mailto:${site.email}`} className="block text-lg underline underline-offset-4 hover:text-accent-light mt-4">
+          <a href={`mailto:${site.email}`} className="block text-lg underline underline-offset-4 hover:text-accent mt-4">
             {site.email}
           </a>
         </div>

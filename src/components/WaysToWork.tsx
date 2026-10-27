@@ -41,7 +41,7 @@ export default function WaysToWork() {
             </p>
             <a
               href="#contact"
-              className="mt-auto pt-6 font-bold underline underline-offset-4 hover:text-accent-light"
+              className="mt-auto pt-6 font-bold underline underline-offset-4 hover:text-accent"
             >
               Ask about a support plan
             </a>
