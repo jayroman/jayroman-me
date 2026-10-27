@@ -55,8 +55,8 @@ export default function SoftwareYouOwn() {
           ))}
         </div>
 
-        <div className="mt-8 bg-tint border-2 border-navy p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
-          <div className="lg:col-span-8">
+        <div className="mt-8 bg-tint border-2 border-navy p-6 sm:p-8 flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-10">
+          <div className="flex-1">
             <h3 className="display-sm text-xl sm:text-2xl text-navy">
               Or make the subscription work harder
             </h3>
@@ -67,10 +67,10 @@ export default function SoftwareYouOwn() {
               around how you actually work, and connect it to the other tools you rely on.
             </p>
           </div>
-          <div className="lg:col-span-4 lg:text-right">
+          <div className="shrink-0">
             <a
               href="#contact"
-              className="inline-block bg-navy hover:bg-navy-2 text-paper font-bold text-lg px-6 py-4"
+              className="inline-block bg-navy hover:bg-navy-2 text-paper font-bold text-lg px-6 py-4 lg:whitespace-nowrap"
             >
               Let&apos;s look at what you&apos;re paying for
             </a>
