@@ -13,12 +13,11 @@ html {
 @theme {
   --font-sans: var(--font-archivo), system-ui, sans-serif;
 
-  /* Brand: navy + blue, from the JR logo */
+  /* Navy, white, and grays. The logo's blue stays in the logo only. */
   --color-navy: #0f172a;        /* primary: header, hero, dark bands, borders */
   --color-navy-2: #1e293b;      /* hover on navy, strong text */
   --color-night: #020617;       /* footer */
-  --color-accent: #3b82f6;      /* the logo's blue: small highlights only */
-  --color-tint: #e8f0fe;        /* pale blue fill */
+  --color-tint: #e5e7eb;        /* light gray fill */
   --color-ink: #1f2937;         /* body text */
   --color-slate: #4b5563;       /* muted text */
   --color-mist: #f1f5f9;        /* light section background */
@@ -46,6 +45,6 @@ html {
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-accent);
+  outline: 3px solid #94a3b8;
   outline-offset: 3px;
 }

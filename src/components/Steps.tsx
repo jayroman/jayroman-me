@@ -27,7 +27,7 @@ export default function Steps() {
               key={s.title}
               className="p-6 sm:p-7 border-paper/20 border-t-2 first:border-t-0 md:border-t-0 md:border-l-2 md:first:border-l-0"
             >
-              <span className="display text-5xl text-accent">{i + 1}</span>
+              <span className="display text-5xl text-paper">{i + 1}</span>
               <h3 className="display-sm text-xl mt-4">{s.title}</h3>
               <p className="text-paper/85 leading-relaxed mt-3">{s.description}</p>
             </li>

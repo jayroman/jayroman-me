@@ -41,7 +41,7 @@ export default function WaysToWork() {
             </p>
             <a
               href="#contact"
-              className="mt-auto pt-6 font-bold underline underline-offset-4 hover:text-accent"
+              className="mt-auto pt-6 font-bold underline underline-offset-4 hover:text-paper/75"
             >
               Ask about a support plan
             </a>
@@ -63,7 +63,7 @@ export default function WaysToWork() {
                 "Getting more out of software you already pay for",
               ].map((p) => (
                 <li key={p} className="flex gap-3">
-                  <span aria-hidden className="mt-2 h-2 w-2 shrink-0 bg-accent" />
+                  <span aria-hidden className="mt-2 h-2 w-2 shrink-0 bg-current" />
                   {p}
                 </li>
               ))}
